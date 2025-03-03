@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block css_link %}
+<link rel="stylesheet" href="css/index.css">
+<style> 
+	img.pictures { 
+            margin-left: 12.5vw;
+            border-radius: 3%;
+        	border: 4px black solid;
+        	height: 40vh; 
+        	width: 50vh; 
+        } 
+</style>
+{% endblock %}
+
+
+
+{% block hero %}
+<div class="phrase">
+	<span style="margin:1%"></span>Reliable Power,<br/>
+	<span style="margin:1%"></span>Consistent Solutions
+</div>
+{% endblock %}
+
+
+{% block content %}
+<div class="content-block">
+    <h1 class="content">
+    Waste to Power and Innovation
+    </h1>
+    <p class="content">
+    <span class="tab"></span>
+    Our company leverages unused and undervalued natural gas resources, such as flare and stranded gas, to electrically power advanced technological solutions. Our innovative approach centers around mobile onsite generators capable of accommodating flexible gas qualities and sizes, ranging from 250 kW to 5 MW. This allows us to provide scalable and sustainable energy solutions tailored to each site. By addressing such challenges, we have carved a new and environmentally conscious path for turning waste into opportunity.<br/><br/>
+    
+    <img class="pictures" src="pictures/data_center_live.jpg">
+    <img class="pictures" src="pictures/flare_gas.jpg">
+    <br/>
+    <br/>
+
+    <span class="tab"></span>
+    With a "build-to-fit" design philosophy, we ensure that each solution is customized to meet the site's and application's unique requirements. Our strategies have built-in flexibility and cutting-edge technology to deliver reliable power and computation where our clients need them most. To push this approach to its limit, we equip our data centers with internet connectivity and advanced computing to support high-demand endpoints, such as artificial intelligence processing and cryptocurrency mining.
+    </p>
+    
+
+
+
+
+
+   
+    <br/>
+    <br/>
+</div>
+{% endblock %}
