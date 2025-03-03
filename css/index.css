@@ -1,0 +1,15 @@
+h1.content {
+	text-align: center;
+}
+p.content {
+	padding-left: 3vw;
+	padding-right: 3vw;
+}
+
+div.content-block {
+	padding-top: 3vh;
+	padding-bottom: 3vh;
+	padding-left: 5vw;
+	padding-right: 5vw;
+	font-size: 1.25rem;
+}

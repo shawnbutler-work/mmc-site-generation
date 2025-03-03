@@ -1,0 +1,20 @@
+
+div.content-block {
+	padding-left: 5vw;
+	padding-right: 5vw;
+}
+img.picture {
+	border-radius: 3%;
+	border: 4px black solid;
+	height: 50vh; 
+	width: 40vh;
+}
+h1.contact {
+	margin-left: 1vw;
+	font-size: 5vh;
+}
+div.contact {
+	margin-left: 15vw;
+	margin-top: 0;
+	font-size: 3vh;
+}
