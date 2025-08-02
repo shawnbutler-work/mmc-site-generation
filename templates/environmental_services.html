@@ -1,38 +1,33 @@
 {% extends 'base.html' %}
 
-{% block css_link %}
-<link rel="stylesheet" href="css/index.css">
-<style> 
-	img.pictures { 
-            margin-left: 28vw;
-            border-radius: 3%;
-        	border: 4px black solid;
-        	height: 40vh; 
-        	width: 50vh; 
-        } 
-</style>
-{% endblock %}
 
-
-
-{% block hero %}
-<div class="phrase">
-	<span style="margin:1%"></span>Industry Trusted,<br/>
-	<span style="margin:1%"></span>Environment Friendly
-</div>
-{% endblock %}
 
 
 {% block content %}
-<div class="content-block">
-    <h1 class="content">
+<style>
+    .service-img {
+      object-fit: cover;
+      border: 3px solid gold; 
+      border-radius: 8px;      
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+      transition: transform 0.3s ease;
+    }
+
+    .service-img:hover {
+      transform: scale(1.05); 
+    }
+</style>
+
+<div class="container mt-5">
+    <h1 class="mb-4">
     Environmental Remediation Expertise
     </h1>
-    <p class="content">
+    <p class="lead">
     <span class="tab"></span>
     Our company offers comprehensive environmental remediation and rehabilitation services for the oil and gas industry. We provide advanced solutions, including bioremediation (in-situ and ex-situ), high and low thermal treatment, groundwater pump-and-treat systems, and soil vapor extraction. Our expertise includes dual-phase recovery, methane recovery systems, waste characterization, manifesting, and disposal. With decades of experience, we have completed projects involving the installation of complex remedial systems such as air sparging (AS), soil vapor extraction (SVE), and dual-phase vapor extraction (DPVE). Our team is certified in hazardous material handling (OSHA 29 CFR 1910.120; EPA 40 CFR 311) and holds a NORM Survey and Control Certification, ensuring safety and regulatory compliance at every project stage.<br/><br/>
     
-    <img class="pictures" src="pictures/oil_spill.jpg">
+    <img class="img-fluid service-img border rounded shadow d-block mx-auto" 
+    src="pictures/oil_spill.jpg"/>
     <br/>
     <br/>
 

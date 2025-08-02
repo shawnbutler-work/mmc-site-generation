@@ -1,59 +1,83 @@
 {% extends 'base.html' %}
 
-{% block css_link %}
-<link rel="stylesheet" href="css/index.css">
-{% endblock %}
-
-
-
-{% block hero %}
-<div class="phrase">
-	<span style="margin:1%"></span>Hard Work<br/>
-	<span style="margin:1%"></span>Pays Off
-</div>
-{% endblock %}
-
 
 {% block content %}
-<div class="content-block">
-	</br>
-    <h1 class="content">Expansions</h1>
-    <h2><span class="tab"></span>Mississippi & Louisiana</h2>
-    <p class="content"><span class="tab"></span>
-    We’ve come to own natural gas pipelines: the Maxie field in Wiggins and the Pistol Ridge field in Lumberton. These assets play a key role in our broader infrastructure by providing access to significant natural gas reserves. We also own the Black Bear Transmission, a large gas transmission trailing through Mississippi and Louisiana. This extensive network enables us to efficiently and safely transport natural gas across state lines.
+<style>
+    .service-img {
+      width: 60%;
+      max-height: 500px;
+      object-fit: cover;
+      border: 3px solid gold; 
+      border-radius: 8px;      
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+      transition: transform 0.3s ease;
+    }
+
+    .service-img:hover {
+      transform: scale(1.05); 
+    }
+</style>
+
+<div class="container mt-5">
+    <h1 class="mb-4">Expansions</h1>
+    <h2 class="mb-3">
+        <span class="tab"></span>
+        Mississippi & Louisiana
+    </h2>
+    <p class="lead">
+        <span class="tab"></span>
+        We’ve come to own natural gas pipelines: the Maxie field in Wiggins and the Pistol Ridge field in Lumberton. These assets play a key role in our broader infrastructure by providing access to significant natural gas reserves. We also own the Black Bear Transmission, a large gas transmission trailing through Mississippi and Louisiana. This extensive network enables us to efficiently and safely transport natural gas across state lines.
     </p>
+    
 
-    <img class="maps" src="pictures/BBT.png"/>
-    <span class="tab"></span>
-    <img src="pictures/LA.png"/>
+    
 
-    <!-- -->
-    <h2><span class="tab"></span>Oklahoma</h2>
-    <p class="content"><span class="tab"></span>
-    Just west of Tulsa, Oklahoma, we have secured over 1,000 miles of natural gas pipelines with Skye OK, who wants to convert the entire line into a cryptocurrency mining system. This partnership provided the unique opportunity to combine the natural gas community with cryptocurrency mining operations. By connecting to oil and gas endpoints such as stranded gas, environmental impacts negatively associated with this industry can be put to a safe, friendly, and economic use.
+    <img class="img-fluid service-img border rounded shadow d-block mx-auto" 
+    src="pictures/BBT.png" href="pictures/BBT.png"/>
+    <br/><br/> <!-- Image Spacer -->
+    <img class="img-fluid service-img border rounded shadow d-block mx-auto" 
+    src="pictures/LA.png" href="pictures/LA.png"/>
+    <br/>
+
+
+    <!-- Oklahoma -->
+    <h2 class="mb-3">
+        <span class="tab"></span>
+        Oklahoma
+    </h2>
+    <p class="lead">
+        <span class="tab"></span>
+        Just west of Tulsa, Oklahoma, we have secured over 1,000 miles of natural gas pipelines with Skye OK, who wants to convert the entire line into a cryptocurrency mining system. This partnership provided the unique opportunity to combine the natural gas community with cryptocurrency mining operations. By connecting to oil and gas endpoints such as stranded gas, environmental impacts negatively associated with this industry can be put to a safe, friendly, and economic use.
     </p>
-    <img class="maps" src="pictures/OK-lines.png"/>
+    <img class="img-fluid service-img border rounded shadow d-block mx-auto" 
+    src="pictures/OK-lines.png"/><br/>
 
-    <!-- -->
-    <h2><span class="tab"></span>Kentucky</h2>
-    <p class="content"><span class="tab"></span>
-    Along with SO KY, we have acquired over 100 miles of natural gas pipelines across four counties in central Kentucky. This partnership strengthens our regional presence and provides a powerful backbone for commercial needs. These pipelines are strategically positioned to further integrate into the Kentucky oil and gas economy.
+    <!-- Kentucky -->
+    <h2>
+        <span class="tab"></span>
+        Kentucky
+    </h2>
+    <p class="lead">
+        <span class="tab"></span>
+        Along with SO KY, we have acquired over 100 miles of natural gas pipelines across four counties in central Kentucky. This partnership strengthens our regional presence and provides a powerful backbone for commercial needs. These pipelines are strategically positioned to further integrate into the Kentucky oil and gas economy.
     </p>
-    <img class="maps" src="pictures/KY-lines.png"/>
+    <img class="img-fluid service-img border rounded shadow d-block mx-auto" 
+    src="pictures/KY-lines.png"/>
 
 
-    <br/>
-    <br/>
-    <br/>
     <br/>
     <hr/>
     <br/>
-    <br/>
 
-    <h1 class="content">Crypto Mining Operations</h1>
-    <p class="content"><span class="tab"></span>
-    Our packages leverage stranded gas to power cryptocurrency miners, offering an eco-friendly and cost effective solution for both the natural gas industry and miners. By tapping into this endpoint, we provide a reliable power source that would otherwise go to waste. This innovative approach provides a marketable opportunity for our clients.
-    Currently, a large network of pipelines - owned by our partner Skye OK - is being modified to accept our system. This alteration will not only enhance the efficiency of the mining operations by reducing waste, but will bolster our ability to expand.. As more pipelines are integrated into the system, the network’s capacity to utilize the waste will grow. As a result, we are creating a self-sustaining monetary loop that will continue to drive our expansion into this industry.
+    <!-- Crypto Mining Operations -->
+    <h1 class="mb-4">
+        Crypto Mining Operations
+    </h1>
+    <p class="lead">
+        <span class="tab"></span>
+        Our packages leverage stranded gas to power cryptocurrency miners, offering an eco-friendly and cost effective solution for both the natural gas industry and miners. By tapping into this endpoint, we provide a reliable power source that would otherwise go to waste. This innovative approach provides a marketable opportunity for our clients. <br/>
+        <span class="tab"></span>
+        Currently, a large network of pipelines - owned by our partner Skye OK - is being modified to accept our system. This alteration will not only enhance the efficiency of the mining operations by reducing waste, but will bolster our ability to expand.. As more pipelines are integrated into the system, the network’s capacity to utilize the waste will grow. As a result, we are creating a self-sustaining monetary loop that will continue to drive our expansion into this industry.
     </p>        
 
     <br/>
